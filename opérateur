@@ -1,0 +1,13 @@
+wholeblock:BEGIN
+  DECLARE dist INT;
+  SELECT COUNT( * ) INTO dist  
+					FROM `TBL_NAME`
+					WHERE (d =CONVERT( SUBSTRING(`Station de depart`,1, 2 ),UNSIGNED INT ))
+					AND    (e = CONVERT( SUBSTRING(`Station de retour`, 1, 2 ),UNSIGNED INT ))
+                 	AND    ( h = CONVERT( SUBSTRING(`Date de debut`, 11, 12 ),UNSIGNED INT ))
+					AND ( 17 = CONVERT( SUBSTRING(`Date de debut`, 1, 2 ),UNSIGNED INT ))
+					AND ( 05 = CONVERT( SUBSTRING( `Date de debut`, 4, 2 ),UNSIGNED INT ))
+					AND ( 2017 =CONVERT( SUBSTRING(`Date de debut`, 7, 10 ),UNSIGNED INT ))
+					AND ( "Operateur" = `Type usager`);
+  RETURN dist;
+END

@@ -1,0 +1,29 @@
+begin
+DECLARE h,d , e INT;
+  SET h=0;
+  SET d =1;
+  SET e =1;
+
+ REPEAT
+    	REPEAT
+			
+			REPEAT 
+
+INSERT INTO locationMonday(heure,StationDepart,StationArrivée,Nbikke) 
+values(h,d,e,RT2(d,e,h));
+ SET e = e + 1;
+			UNTIL e = 41
+			END REPEAT;
+SET d = d + 1;
+SET e = 1 ;
+   		
+		 UNTIL d = 41
+  	     END REPEAT;
+SET h = h + 1;
+SET d = 1 ;
+   		
+		 UNTIL h = 24
+  	     END REPEAT;
+
+  
+END

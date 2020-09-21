@@ -1,0 +1,9 @@
+BEGIN 
+  DECLARE dist FLOAT;
+  SELECT AVG(`nombre_vélo`) INTO dist  
+					FROM `Mois` 
+					WHERE `mois`= x1
+					and `jourName`=x3
+					and`heure`= x2 ;
+  RETURN dist;
+END

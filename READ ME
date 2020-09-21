@@ -1,0 +1,8 @@
+
+ activité cluster : construire un tableau contenat le flow de cluster déja réalisé
+ aday location : extraire une journéé de flow de vélo 
+ opérature : une journée de l'opérature 
+ MoyenneJour : calculer la moyenne des mèmes jours
+ calais location : construire un tableau contenat le flow de vélo existe déja
+ Précluster : construire un tableau pour le traitement de clustering 
+ clusterFlow(entrant\sortant) : construire un tableau de flow de cluster existe déja 

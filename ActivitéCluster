@@ -1,0 +1,19 @@
+BEGIN
+  DECLARE h INT;
+  SET h = 0;
+  
+
+
+   	REPEAT
+
+INSERT INTO `return cluster`(heure,g1,g2) 
+values(h,entrant1(h),entrant2(h));
+
+SET h = h + 1;
+
+		 UNTIL h = 24
+  	     END REPEAT;
+
+
+
+END

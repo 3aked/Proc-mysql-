@@ -1,0 +1,12 @@
+BEGIN 
+  DECLARE dist INT;
+  SELECT COUNT( * ) INTO dist  
+					FROM `CalaisLocation`
+					WHERE (`id station arrivée` =X)
+					And (`heure` =h)
+					AND(`year`=2017)
+					AND(mois=5)
+					and (jour =17);
+
+  RETURN dist;
+END

@@ -1,0 +1,33 @@
+wholeblock:BEGIN
+  DECLARE x ,h,d , e INT;
+  SET x = 0;
+  SET h = 0;
+  SET d =0;
+  SET e =0;
+
+REPEAt
+	REPEAt
+   
+    		REPEAT
+			
+		INSERT INTO CalaisLocation(heure,minute,StationDepart,StationArrivée,Nbikke) 
+		values(h,0,d,e,RT0(h,x,d,e));
+
+
+		SET e = e + 1;
+		UNTIL e =41
+		END REPEAT;
+
+	SET d = d + 1;
+	SET e = 0 ;
+   		
+	UNTIL d = 41
+  	END REPEAT;
+
+SET d = 0 ;
+SET h = h + 1;
+UNTIL h = 24
+END REPEAT;
+
+
+END
